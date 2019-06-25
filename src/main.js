@@ -3,8 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { fetch } from './service/fetch'
+
+require('./service/polyfill')
 
 Vue.config.productionTip = false
+
+// 绑定fetch到vue原型上，方便调用
+Vue.prototype.$fetch = fetch
 
 /* eslint-disable no-new */
 new Vue({

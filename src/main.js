@@ -5,6 +5,17 @@ import App from './App'
 import router from './router'
 import { fetch } from './service/fetch'
 
+// 引入mint-ui
+import {Search, Swipe, SwipeItem, Toast} from 'mint-ui'
+import 'mint-ui/lib/style.css'
+
+// 本地组件
+
+const mintUis = [Search, Swipe, SwipeItem, Toast]
+mintUis.map(function (cp) {
+  Vue.component(cp.name, cp)
+})
+
 require('./service/polyfill')
 
 Vue.config.productionTip = false

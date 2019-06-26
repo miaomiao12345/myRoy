@@ -1,0 +1,31 @@
+{
+  "error": "0",
+  "msg": "？？？？？",
+  "data": {
+    "imgs": [
+      "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1410330.jpg?max_age=2592000",
+        "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1417196.jpg?max_age=2592000",
+        "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1405604.jpg?max_age=2592000",
+        "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1416349.jpg?max_age=2592000",
+        "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1416517.jpg?max_age=2592000",
+        "https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1416633.jpg?max_age=2592000"
+    ],
+    "gexingdiantai":[
+      {"title":"新歌新碟","text":"陈粒搭构温柔世界","img":"https://y.gtimg.cn/music/photo/radio/track_radio_199_10_8.jpg?max_age=2592000"},
+      {"title":"数字专辑·票务","text":"ONER舞会之夜","img":"https://y.gtimg.cn/music/photo/radio/track_radio_307_10_4.jpg?max_age=2592000"}
+    ],
+
+    
+    "tjgd":{
+      "title":"为你推荐歌单",
+      "items":[
+        {"title":"迷人薄荷音","img":"https://p.qpic.cn/music_cover/BS8ClOBHfN0ctcK0yDpy3iaw7PAgmvQ3YLFZl6arL0pyHboF5wrKNIQ/300?n=1","numbers":"3亿"},
+        {"title":"古风·世事一场梦","img":"https://p.qpic.cn/music_cover/nvRBiaJHaPBvG00iczEYfbu7731RPVCWyvtGTfJXK9bV6rcFkyLyewQw/300?n=1","numbers":"3亿"},
+        {"title":"世不遇你，生无可喜","img":"https://p.qpic.cn/music_cover/PiajxSqBRaEI9qicEFm4ISibAnnbhfTC0XKmvahbRErFbM6r11q9s4lag/300?n=1","numbers":"3亿"},
+        {"title":"毕业季·你总说时间还很多","img":"https://p.qpic.cn/music_cover/j50Ihtp2h2UwaRgJuNjmRicEp2VeDicEibfrpEtcnLEm7ia4ibibyWcwlhdg/300?n=1","numbers":"3亿"},
+        {"title":"舒心民谣","img":"https://p.qpic.cn/music_cover/Fe6emiag6IuVbMib3oN6yctcbCZmFKd8QF6WoKibibq018HfSjibvdErGnA/300?n=1","numbers":"3亿"},
+        {"title":"不是想走，是时间不肯留","img":"https://p.qpic.cn/music_cover/PiajxSqBRaEISibhtdxpkLprufpT7OzywmuYVNIiaMWIeqLv9Eaico0WLA/300?n=1","numbers":"3亿"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "error":"0",
+  "mgs":"???",
+  "data":{
+    "user":{
+      "is_login":true,
+      "username":"三年二班喵小萌",
+      "dingzhi":[
+        {"img":"https://p.qpic.cn/music_cover/NaYDCjF6oFDyCBFMbYpoKxDU4HDtTEic0F28fg4Beqj5xvghia0xrhIw/300?n=1","title":"虐心网络曲：爱过你，却终究错过"},
+        {"img":"https://p.qpic.cn/music_cover/llTQ9l2AeicK2OLIORnsUdhHoliciaMBkKINs1D02meepu31csecWI2jA/300?n=1","title":"Dream Pop：送你今日份的温柔"},
+        {"img":"https://p.qpic.cn/music_cover/R8unPZMA4Vp5v2Ms96bst3b1jUibKLn6McwWib4I53dn7ah92YOrQUTQ/300?n=1","title":"失恋听情歌：不负彼此，不谈亏欠"}
+      ]
+    },
+    "songs":{
+      "img":"https://y.gtimg.cn/music/photo_new/T002R300x300M000003t8AXc4T3xtS.jpg?max_age=2592000",
+      "name":"滚烫的青春",
+      "singer":"王源",
+      "time":""
+    }
+  }
+}

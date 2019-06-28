@@ -1,13 +1,21 @@
 <template>
-  <div>我是我</div>
+  <div>{{base}}</div>
 </template>
 
 <script>
 export default {
   name: 'User',
+  props:{
+    base:''
+  },
   data() {
     return {
       
+    }
+  },
+  computed:{
+    userdata() {
+      return this.$store.state.userdata;
     }
   }
 }

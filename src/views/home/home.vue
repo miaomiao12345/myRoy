@@ -1,7 +1,7 @@
 <template>
-  <div class="content flex-column bg-theme width-100 padding-10 height-100">
+  <div class="content bg-theme width-100 height-100">
     <Title></Title>
-    <div class="flex-1 flex-column width-100">
+    <div class="flex-column width-100">
       <mt-swipe :auto='4000' class="width-100 margin-top-15" style="height:150px" >
         <mt-swipe-item v-for="(item,index) in baseData.imgs" :key="index"><img :src="item" alt=""></mt-swipe-item>
       </mt-swipe>
@@ -17,7 +17,7 @@
           <div class="f-15 color-f">个性电台</div>
         </div>
         <div class=" flex-1 margin-left-30">
-          <div class="gxdt width-100 flex-row margin-top-5" v-for="item in baseData.gexingdiantai" :key="item">
+          <div class="gxdt width-100 flex-row margin-top-5" v-for="(item,index) in baseData.gexingdiantai" :key="index">
             <div class="flex-1 padding-5">
               <div class="f-15 text-left">{{item.title}}</div>
               <div class="f-12 text-left">{{item.text}}</div>
@@ -28,7 +28,20 @@
           </div>
         </div>
       </div>
-      <Card :datalist="baseData.tjgd"></Card>
+      <Card title="为你推荐歌单" :datalist="baseData.tjgd"></Card>
+      <Card title="精选视频" :datalist ="baseData.flzq" :imgStyle="flzqStyle"></Card>
+      <div class="dingzhi width-100 f-15 margin-top-30" v-if="userdata.is_login">
+        <div>Hi, {{userdata.username}}</div>
+        <div class="flex-row width-100 margin-top-15">
+          <div class="line margin-right-15"></div>
+          <div>你的专属定制</div>
+          <div class="line margin-left-15"></div>
+        </div>
+        <div class="width-100 flex-row margin-top-10" v-for="(item,index) in userdata.dingzhi" :key="index">
+          <img :src="item.img" alt="">
+          <div class="flex-1 text-center">{{item.title}}</div>
+        </div>
+      </div>
     </div>
   </div>
   
@@ -41,6 +54,10 @@ import Card from './component/card'
 
 export default {
   name: 'Home',
+  props:{
+    base:''
+
+  },
   data() {
     return {
       baseData: {},
@@ -51,10 +68,15 @@ export default {
         {icon:'icon-diantai',text:'电台'},
         {icon:'icon-huabankaobei-',text:'一起听'}
       ],
-      tjgdStyle:{
-        width:'80px',
-        height:'80px'
+      flzqStyle: {
+        width:'200px',
+        height:'90px'
       }
+    }
+  },
+  computed:{
+    userdata() {
+      return this.$store.state.userdata
     }
   },
   components: {
@@ -75,6 +97,7 @@ export default {
 
 <style lang="less" scoped>
   .content{
+    padding: 10px 10px 125px 10px;
     .ics{
       display: flex;
       justify-content: space-around;
@@ -95,8 +118,19 @@ export default {
       border-radius: 10px;
       background: rgba(238, 235, 235,0.5);
       padding-left: 10px;
-
-      
+      overflow: hidden;
+    }
+    .dingzhi{
+      .line{
+        width: 80px;
+        height: 1px;
+        transform: scaleY(0.5);
+        background: #999
+      }
+      img{
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 

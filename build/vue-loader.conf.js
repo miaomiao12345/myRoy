@@ -18,5 +18,13 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+  postcss: [
+    require('postcss-plugin-px2rem')({
+      // base on 375px standard.
+      rootValue: 16,
+      // to leave 1px alone.
+      minPixelValue: 1.01
+    })
+  ]
 }

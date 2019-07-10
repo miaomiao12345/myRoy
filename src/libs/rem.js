@@ -29,7 +29,7 @@
         docWidth = 540 * dpr;
       }
       //rem字号以375下的16px为基线进行等比缩放
-      rem = docWidth/320 * 16;
+      rem = docWidth/375 * 16;
       docEl.style.fontSize = rem + "px";
   }
   changeRem();

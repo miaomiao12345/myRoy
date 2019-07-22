@@ -1,0 +1,118 @@
+/* 生产fontsize */
+.f-5 {
+  font-size: 5px !important;
+}
+.f-6 {
+  font-size: 6px !important;
+}
+.f-7 {
+  font-size: 7px !important;
+}
+.f-8 {
+  font-size: 8px !important;
+}
+.f-9 {
+  font-size: 9px !important;
+}
+.f-10 {
+  font-size: 10px !important;
+}
+.f-11 {
+  font-size: 11px !important;
+}
+.f-12 {
+  font-size: 12px !important;
+}
+.f-13 {
+  font-size: 13px !important;
+}
+.f-14 {
+  font-size: 14px !important;
+}
+.f-15 {
+  font-size: 15px !important;
+}
+.f-16 {
+  font-size: 16px !important;
+}
+.f-17 {
+  font-size: 17px !important;
+}
+.f-18 {
+  font-size: 18px !important;
+}
+.f-19 {
+  font-size: 19px !important;
+}
+.f-20 {
+  font-size: 20px !important;
+}
+.f-21 {
+  font-size: 21px !important;
+}
+.f-22 {
+  font-size: 22px !important;
+}
+.f-23 {
+  font-size: 23px !important;
+}
+.f-24 {
+  font-size: 24px !important;
+}
+.f-25 {
+  font-size: 25px !important;
+}
+.f-26 {
+  font-size: 26px !important;
+}
+.f-27 {
+  font-size: 27px !important;
+}
+.f-28 {
+  font-size: 28px !important;
+}
+.f-29 {
+  font-size: 29px !important;
+}
+.f-30 {
+  font-size: 30px !important;
+}
+.f-31 {
+  font-size: 31px !important;
+}
+.f-32 {
+  font-size: 32px !important;
+}
+.f-33 {
+  font-size: 33px !important;
+}
+.f-34 {
+  font-size: 34px !important;
+}
+.f-35 {
+  font-size: 35px !important;
+}
+.f-36 {
+  font-size: 36px !important;
+}
+.f-37 {
+  font-size: 37px !important;
+}
+.f-38 {
+  font-size: 38px !important;
+}
+.f-39 {
+  font-size: 39px !important;
+}
+.f-40 {
+  font-size: 40px !important;
+}
+.f-w {
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1208480 */
+  src: url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.eot');
+  src: url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.woff2') format('woff2'), url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.woff') format('woff'), url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.ttf') format('truetype'), url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.svg#iconfont') format('svg');
+}

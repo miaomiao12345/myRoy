@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="bg-theme">
     <router-view class="flex-1 height-100 width-100"></router-view>
-    <Navbar :songs ="historydata.songs"></Navbar>
+    <Navbar></Navbar>
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
       }).then(res => {
         this.historydata = res.data;
         this.$store.commit('updateUserData',this.historydata.user);
+        this.$store.commit('updateSongData',this.historydata.songs)
       }).catch(err => {
         
       })
@@ -39,7 +40,7 @@ export default {
 
 <style lang="less">
 @import './assets/css/common.less';
-@import url('//at.alicdn.com/t/font_1208480_kjgiyerpxfg.css');
+@import url('//at.alicdn.com/t/font_1208480_nu7bdkgi9dr.css');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

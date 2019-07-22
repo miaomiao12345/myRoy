@@ -1,9 +1,9 @@
 <template>
   <div class="navbar">
     <div class="width-100 flex-row bg-theme padding-5">
-      <div :style="{background:'url('+songs.img+')','background-size':'contain'}" class="img"></div>
+      <div :style="{background:'url('+songs.img+')','backgroundSize':'contain'}" class="img"></div>
       <div class="flex-1 margin-left-15 text-left">{{songs.name}}-{{songs.singer}}</div>
-      <i class="iconfont icon-bofang f-30 color-orange"></i>
+      <i class="iconfont icon-play1 f-30 color-orange"></i>
       <i class="margin-left-10 iconfont f-30 icon-gedan color-orange"></i>
     </div>
     <div class="nav width-100">
@@ -45,12 +45,9 @@ export default {
       ]
     }
   },
-  props:{
-    songs:{
-      type: Object,
-      default: function () {
-        return {}
-      }
+  computed : {
+    songs() {
+      return this.$store.state.songdata
     }
   },
   methods:{

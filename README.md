@@ -1,4 +1,18 @@
 项目预览地址：https://miaomiao12345.github.io/myRoy/
+(暂时没有数据，建议下载源码运行看效果)
+
+运行项目：
+cd myRoy
+
+npm install
+
+npm run dev
+
+源码内含mockdata，可直接看页面效果
+
+首页搜索框可点击，搜索之后进入歌曲列表页，点击列表页歌曲出现播放按钮
+
+暂时着重在页面效果部分，不提供音乐播放功能
 
 # myroy
 

@@ -1,0 +1,606 @@
+{
+    "code": 0,
+    "color": 0,
+    "comment_num": 63209,
+    "cur_song_num": 100,
+    "date": "2019-07-22",
+    "day_of_year": "203",
+    "song_begin": 0,
+    "songlist": [
+        {
+            "Franking_value": "1",
+            "cur_count": "1",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7064087,
+                "albummid": "000DMpJ73yeITP",
+                "albumname": "尘",
+                "alertid": 11,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 286,
+                "isonly": 0,
+                "label": "0",
+                "msgid": 0,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 0,
+                    "payinfo": 0,
+                    "payplay": 0,
+                    "paytrackmouth": 0,
+                    "paytrackprice": 0,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 0
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 5062,
+                        "mid": "002J4UUk29y8BY",
+                        "name": "薛之谦"
+                    }
+                ],
+                "size128": 4587292,
+                "size320": 11467945,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 28667606,
+                "sizeogg": 6211907,
+                "songid": 233704216,
+                "songmid": "003iHc0e2UIgMC",
+                "songname": "木偶人",
+                "songorig": "木偶人",
+                "songtype": 0,
+                "strMediaMid": "003iHc0e2UIgMC",
+                "stream": 1,
+                "switch": 605971,
+                "type": 0,
+                "vid": "h0031bjey3f"
+            },
+            "in_count": "26",
+            "old_count": "1"
+        },
+        {
+            "Franking_value": "2",
+            "cur_count": "2",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7064087,
+                "albummid": "000DMpJ73yeITP",
+                "albumname": "尘",
+                "alertid": 11,
+                "belongCD": 2,
+                "cdIdx": 0,
+                "interval": 241,
+                "isonly": 0,
+                "label": "0",
+                "msgid": 0,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 0,
+                    "payinfo": 0,
+                    "payplay": 0,
+                    "paytrackmouth": 0,
+                    "paytrackprice": 0,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 0
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 5062,
+                        "mid": "002J4UUk29y8BY",
+                        "name": "薛之谦"
+                    }
+                ],
+                "size128": 3867562,
+                "size320": 9668627,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 54146718,
+                "sizeogg": 5619032,
+                "songid": 233704309,
+                "songmid": "002qpjAV2lYx81",
+                "songname": "慢半拍",
+                "songorig": "慢半拍",
+                "songtype": 0,
+                "strMediaMid": "002qpjAV2lYx81",
+                "stream": 1,
+                "switch": 605971,
+                "type": 0,
+                "vid": "q0031nsvyig"
+            },
+            "in_count": "5",
+            "old_count": "2"
+        },
+        {
+            "Franking_value": "2",
+            "cur_count": "3",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7065360,
+                "albummid": "000A2zt73JBL4s",
+                "albumname": "放个大招给你看",
+                "alertid": 2,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 178,
+                "isonly": 0,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 960887
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 1441799,
+                        "mid": "0023dQD40to8NP",
+                        "name": "永彬Ryan.B"
+                    }
+                ],
+                "size128": 2860732,
+                "size320": 7151501,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 38799664,
+                "sizeogg": 4061686,
+                "songid": 233711252,
+                "songmid": "003SQyoA0efQc5",
+                "songname": "放个大招给你看",
+                "songorig": "放个大招给你看",
+                "songtype": 0,
+                "strMediaMid": "003SQyoA0efQc5",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": ""
+            },
+            "in_count": "26",
+            "old_count": "3"
+        },
+        {
+            "Franking_value": "4",
+            "cur_count": "4",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7159902,
+                "albummid": "002FN1rR4PKMng",
+                "albumname": "bad guy",
+                "alertid": 21,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 194,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 0
+                },
+                "rate": 7,
+                "singer": [
+                    {
+                        "id": 1124294,
+                        "mid": "0034MZS446AF7O",
+                        "name": "Billie Eilish"
+                    },
+                    {
+                        "id": 16257,
+                        "mid": "002DYpxl3hW3EP",
+                        "name": "Justin Bieber"
+                    }
+                ],
+                "size128": 3118623,
+                "size320": 7796164,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 0,
+                "sizeogg": 4681088,
+                "songid": 234396009,
+                "songmid": "000AHdHp1WuDoZ",
+                "songname": "bad guy",
+                "songorig": "bad guy",
+                "songtype": 0,
+                "strMediaMid": "000AHdHp1WuDoZ",
+                "stream": 1,
+                "switch": 17409795,
+                "type": 0,
+                "vid": "s00315slxzn"
+            },
+            "in_count": "10",
+            "old_count": "4"
+        },
+        {
+            "Franking_value": "2",
+            "cur_count": "5",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7158268,
+                "albummid": "00465GJx0hFaMe",
+                "albumname": "我的朋友",
+                "alertid": 21,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 219,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 0
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 34412,
+                        "mid": "000zmpju02bEBm",
+                        "name": "TFBOYS"
+                    }
+                ],
+                "size128": 3510225,
+                "size320": 8774996,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 48542743,
+                "sizeogg": 4987347,
+                "songid": 234381105,
+                "songmid": "001nGinl3Tsk4H",
+                "songname": "我的朋友",
+                "songorig": "我的朋友",
+                "songtype": 0,
+                "strMediaMid": "001nGinl3Tsk4H",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": ""
+            },
+            "in_count": "10",
+            "old_count": "5"
+        },
+        {
+            "Franking_value": "0",
+            "cur_count": "6",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7215891,
+                "albummid": "002N84iF3QxG1c",
+                "albumname": "差不多姑娘",
+                "alertid": 21,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 230,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 960887
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 13948,
+                        "mid": "001fNHEf1SFEFN",
+                        "name": "G.E.M. 邓紫棋"
+                    }
+                ],
+                "size128": 3682018,
+                "size320": 9204722,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 26527121,
+                "sizeogg": 5277229,
+                "songid": 234824638,
+                "songmid": "000wocYU11tSzS",
+                "songname": "差不多姑娘",
+                "songorig": "差不多姑娘",
+                "songtype": 0,
+                "strMediaMid": "000wocYU11tSzS",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": "b0031kyhy1p"
+            },
+            "in_count": "1",
+            "old_count": "0"
+        },
+        {
+            "Franking_value": "4",
+            "cur_count": "7",
+            "data": {
+                "albumdesc": "",
+                "albumid": 7137847,
+                "albummid": "0037RJbA0NJ0tv",
+                "albumname": "别再靠近我了",
+                "alertid": 2,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 273,
+                "isonly": 0,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 960887
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 1473880,
+                        "mid": "004V53Ga0bV65j",
+                        "name": "陈雪凝"
+                    }
+                ],
+                "size128": 4372059,
+                "size320": 10929838,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 32545450,
+                "sizeogg": 6275749,
+                "songid": 234235088,
+                "songmid": "000CLThZ1MBRc1",
+                "songname": "别再靠近我了",
+                "songorig": "别再靠近我了",
+                "songtype": 0,
+                "strMediaMid": "000CLThZ1MBRc1",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": ""
+            },
+            "in_count": "14",
+            "old_count": "6"
+        },
+        {
+            "Franking_value": "7",
+            "cur_count": "8",
+            "data": {
+                "albumdesc": "《使徒行者2：谍影行动》电影主题曲",
+                "albumid": 7162783,
+                "albummid": "003r6H084Rsr41",
+                "albumname": "如约",
+                "alertid": 2,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 288,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 960887
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 1005787,
+                        "mid": "001KH1tJ02U8KY",
+                        "name": "摩登兄弟"
+                    }
+                ],
+                "size128": 4610699,
+                "size320": 11526461,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 52698090,
+                "sizeogg": 5905657,
+                "songid": 234423829,
+                "songmid": "004FKATr1PB2ff",
+                "songname": "如约",
+                "songorig": "如约",
+                "songtype": 0,
+                "strMediaMid": "004FKATr1PB2ff",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": "o0031vnmgdo"
+            },
+            "in_count": "7",
+            "old_count": "7"
+        },
+        {
+            "Franking_value": "8",
+            "cur_count": "9",
+            "data": {
+                "albumdesc": "《宸汐缘》电视剧插曲",
+                "albumid": 7130475,
+                "albummid": "001HvHaq3E9E9Y",
+                "albumname": "水从天上来",
+                "alertid": 2,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 294,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 14,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 0,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 0
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 199515,
+                        "mid": "0003ZpE43ypssl",
+                        "name": "张碧晨"
+                    },
+                    {
+                        "id": 2696301,
+                        "mid": "0010ZEtk1CMl32",
+                        "name": "郑云龙"
+                    }
+                ],
+                "size128": 4714363,
+                "size320": 11785606,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 33486492,
+                "sizeogg": 6713003,
+                "songid": 234178231,
+                "songmid": "001X26co3oP5wy",
+                "songname": "水从天上来",
+                "songorig": "水从天上来",
+                "songtype": 0,
+                "strMediaMid": "002cDjUY3TJ6eZ",
+                "stream": 1,
+                "switch": 17413891,
+                "type": 0,
+                "vid": "g0031w8dhqz"
+            },
+            "in_count": "5",
+            "old_count": "8"
+        },
+        {
+            "Franking_value": "12",
+            "cur_count": "10",
+            "data": {
+                "albumdesc": "《德鲁纳酒店》韩剧插曲",
+                "albumid": 7171161,
+                "albummid": "0014cEw84HMx0Q",
+                "albumname": "호텔 델루나 OST Part.1 (德鲁纳酒店 OST Part.1)",
+                "alertid": 22,
+                "belongCD": 1,
+                "cdIdx": 0,
+                "interval": 217,
+                "isonly": 1,
+                "label": "0",
+                "msgid": 13,
+                "pay": {
+                    "payalbum": 0,
+                    "payalbumprice": 0,
+                    "paydownload": 1,
+                    "payinfo": 1,
+                    "payplay": 1,
+                    "paytrackmouth": 1,
+                    "paytrackprice": 200,
+                    "timefree": 0
+                },
+                "preview": {
+                    "trybegin": 0,
+                    "tryend": 0,
+                    "trysize": 960887
+                },
+                "rate": 23,
+                "singer": [
+                    {
+                        "id": 12840,
+                        "mid": "002YHRCp0ElnKa",
+                        "name": "먼데이 키즈 (Monday Kiz)"
+                    },
+                    {
+                        "id": 176687,
+                        "mid": "000lHQbb1VAljd",
+                        "name": "펀치 (PUNCH)"
+                    }
+                ],
+                "size128": 3488949,
+                "size320": 8721740,
+                "size5_1": 0,
+                "sizeape": 0,
+                "sizeflac": 47381418,
+                "sizeogg": 4864128,
+                "songid": 234482781,
+                "songmid": "004USnSu10Ylb0",
+                "songname": "Another Day",
+                "songorig": "Another Day",
+                "songtype": 0,
+                "strMediaMid": "004USnSu10Ylb0",
+                "stream": 1,
+                "switch": 17421569,
+                "type": 0,
+                "vid": "t0031uwuhjq"
+            },
+            "in_count": "7",
+            "old_count": "12"
+        }
+    ]
+}

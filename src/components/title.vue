@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     search() {
-
+      this.$store.commit('updateSearch',true)
     },
     tingGeShiQu() {
 

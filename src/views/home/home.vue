@@ -13,7 +13,7 @@
       </div>
       <div class="flex-row margin-top-15 width-100">
         <div class="diantai">
-          <i class="iconfont icon-bofang f-30 color-f"></i>
+          <i class="iconfont icon-play1 f-30 color-f"></i>
           <div class="f-15 color-f">个性电台</div>
         </div>
         <div class=" flex-1 margin-left-30">
@@ -43,6 +43,17 @@
         </div>
       </div>
     </div>
+
+    <!-- 搜索框 -->
+    <div class="search padding-top-30" v-if="search">
+      <mt-search
+          v-model="value"
+          cancel-text="取消"
+          placeholder="搜索歌曲/歌手/歌词/专辑等"
+          @keyup.enter.native="handleSearch"
+          :autofocus="autofocus">
+      </mt-search>
+    </div>
   </div>
   
 </template>
@@ -71,26 +82,48 @@ export default {
       flzqStyle: {
         width:'200px',
         height:'90px'
-      }
+      },
+      value: '',
+      autofocus: true
     }
   },
   computed:{
     userdata() {
       return this.$store.state.userdata
+    },
+    search() {
+      return this.$store.state.search
     }
   },
   components: {
     Title,
     Card
   },
+  methods:{
+    getInitData() {
+      this.$fetch({
+        url: 'webapi/home/initData'
+      }).then(res => {
+        this.baseData = res.data;
+      }).catch(err => {
+        Toast(err.msg)
+      })
+    },
+    handleSearch() {
+      this.$fetch({
+          url:'api/getDiscList',
+          data:{value: this.value}
+      }).then(res => {
+          this.$store.commit('updateSongList',res.songlist);
+          this.$store.commit('updateSearch', false)
+          this.$router.push('/songs')
+      }).catch(err => {
+          console.log(err)
+      })
+    }
+  },
   mounted() {
-    this.$fetch({
-      url: 'webapi/home/initData'
-    }).then(res => {
-      this.baseData = res.data;
-    }).catch(err => {
-      Toast(err.msg)
-    })
+    this.getInitData()
   }
 }
 </script>
@@ -98,6 +131,7 @@ export default {
 <style lang="less" scoped>
   .content{
     padding: 10px 10px 125px 10px;
+    position: relative;
     .ics{
       display: flex;
       justify-content: space-around;
@@ -131,6 +165,17 @@ export default {
         width: 100px;
         height: 100px;
       }
+    }
+    .search{
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height:750px;
+      z-index: 20;
     }
   }
 

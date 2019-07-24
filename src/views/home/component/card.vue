@@ -12,7 +12,7 @@
         <div style="position:relative">
           <img :src="item.img"  alt="">
           <div class="play">
-            <i class="iconfont icon-bofang f-10"></i>
+            <i class="iconfont icon-play1 f-10"></i>
             <span>{{item.numbers}}</span>
           </div>
         </div>

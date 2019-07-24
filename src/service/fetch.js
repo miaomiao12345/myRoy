@@ -41,12 +41,14 @@ export const fetch = (params) => {
     axios(o).then((res) => {
       let data = res.data
       if (typeof data !== 'object') {
+        console.log("typeof data !== 'object'")
         reject(res)
         return
       }
-      if (data.error === '0') {
+      if (data.error === '0' || data.code === 0) {
         resolve(data)
       } else {
+        console.log('err')
         reject(data)
       }
     }).catch((res) => {

@@ -42,6 +42,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
+    },
+    before(router){
+      router.post('/webapi/*', (req, res) => {
+        let thePath = req.path.replace(/webapi/, 'mockdata');
+        res.sendFile(path.join(__dirname, `../${thePath}.json`))
+      });
+      router.get('/webapi/*', (req, res) => {
+        let thePath = req.path.replace(/webapi/, 'mockdata');
+        res.sendFile(path.join(__dirname, `../${thePath}.json`))
+      });
     }
   },
   plugins: [

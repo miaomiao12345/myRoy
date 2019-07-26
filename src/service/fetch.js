@@ -45,7 +45,7 @@ export const fetch = (params) => {
         reject(res)
         return
       }
-      if (data.error === '0' || data.code === 0) {
+      if (data.error === '0' || data.code === 0 || data.status === 1) {
         resolve(data)
       } else {
         console.log('err')

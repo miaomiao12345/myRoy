@@ -4,7 +4,7 @@
 
       <div :style="imgStyle" class="img"></div>
 
-      <div class="flex-1 margin-left-15 text-left">{{`${songs.name}-${songs.singer}`}}</div>
+      <div class="flex-1 margin-left-15 text-left">{{`${songs.name} - ${songs.singer}`}}</div>
       <i class="iconfont icon-play1 f-30 color-orange"></i>
       <i class="margin-left-10 iconfont f-30 icon-gedan color-orange"></i>
     </div>

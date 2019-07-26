@@ -6,9 +6,10 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     userdata: '', // 用户历史记录和个性定制
-    songlist: [] ,// 歌曲列表
+    songlist: [] , // 歌曲列表
     search: false,
-    songdata: {}
+    songdata: {},
+    origin: 'qq音乐'
   },
   mutations: {
     updateUserData (state, value) {
@@ -22,6 +23,9 @@ const store = new Vuex.Store({
     },
     updateSongData (state, value) {
       state.songdata = value
+    },
+    updateOrigin (state, value) {
+      state.origin = value
     }
   }
 })

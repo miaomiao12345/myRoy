@@ -6,13 +6,13 @@
         <mt-swipe-item v-for="(item,index) in baseData.imgs" :key="index"><img :src="item" alt=""></mt-swipe-item>
       </mt-swipe>
       <div class="margin-top-15 ics width-100">
-        <div v-for="(item,index) in ics" :key="index">
+        <div v-for="(item,index) in ics" :key="index" @click="getRankList">
           <i :class="[item.icon,'iconfont','f-30']" style="color:rgb(214, 138, 67)"></i>
           <div class="f-15">{{item.text}}</div>
         </div>
       </div>
       <div class="flex-row margin-top-15 width-100">
-        <div class="diantai">
+        <div class="diantai" @click="getRecommend">
           <i class="iconfont icon-play1 f-30 color-f"></i>
           <div class="f-15 color-f">个性电台</div>
         </div>
@@ -110,15 +110,73 @@ export default {
       })
     },
     handleSearch() {
+      if(!this.value) {
+        this.getRankList();
+        return;
+      }
       this.$fetch({
-          url:'api/getDiscList',
-          data:{value: this.value}
+          url:'api/getSongList',
+          data:{keyword: this.value}
       }).then(res => {
-          this.$store.commit('updateSongList',res.songlist);
+          let odata = res.data.info.map(item => {
+            return {
+              songname:item.songname,
+              singer:item.singername,
+              albumname:item.album_name
+            }
+          })
+          this.$store.commit('updateSongList',odata);
           this.$store.commit('updateSearch', false)
+          this.$store.commit('updateOrigin','酷狗音乐')
           this.$router.push('/songs')
       }).catch(err => {
           console.log(err)
+      })
+    },
+    getRecommend() {
+      this.$fetch({
+        url:'api/getDiscList'
+      }).then(res => {
+        let odata = res.songlist.map(item => {
+          let album = item.data.albumid || '';
+          let len = album.toString().length;
+          let albumid = album.toString().slice(len-2);
+          albumid = albumid.indexOf('0') == 0 ? albumid.slice(1) : albumid;
+          return {
+            songname:item.data.songname,
+            singer:item.data.singer[0].name,
+            albumname:item.data.albumname,
+            img:`http://imgcache.qq.com/music/photo/album_300/${albumid}/300_albumpic_${item.data.albumid}_0.jpg`
+          }
+        })
+        this.$store.commit('updateSongList',odata);
+        this.$store.commit('updateOrigin','qq音乐')
+        this.$router.push('/songs')
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+    getRankList() {
+      this.$fetch({
+        url:'api/getRankList'
+      }).then(res => {
+        let odata = res.songlist.map(item => {
+          let album = item.data.albumid || '';
+          let len = album.toString().length;
+          let albumid = album.toString().slice(len-2);
+          albumid = albumid.indexOf('0') == 0 ? albumid.slice(1) : albumid;
+          return {
+            songname:item.data.songname,
+            singer:item.data.singer[0].name,
+            albumname:item.data.albumname,
+            img:`http://imgcache.qq.com/music/photo/album_300/${albumid}/300_albumpic_${item.data.albumid}_0.jpg`
+          }
+        })
+        this.$store.commit('updateSongList',odata);
+        this.$store.commit('updateOrigin','qq音乐')
+        this.$router.push('/songs')
+      }).catch(err => {
+        console.log(err)
       })
     }
   },

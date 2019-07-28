@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <Card title="为你推荐歌单" :datalist="baseData.tjgd"></Card>
+      <Card title="为你推荐歌单" :datalist="baseData.tjgd"  :handleClick="gedanClick"></Card>
       <Card title="精选视频" :datalist ="baseData.flzq" :imgStyle="flzqStyle"></Card>
       <div class="dingzhi width-100 f-15 margin-top-30" v-if="userdata.is_login">
         <div>Hi, {{userdata.username}}</div>
@@ -71,6 +71,7 @@ export default {
   },
   data() {
     return {
+      gedanClick:true,
       baseData: {},
       ics: [
         {icon:'icon-flyme_icon-',text:'歌手'},
@@ -116,7 +117,7 @@ export default {
       }
       this.$fetch({
           url:'api/getSongList',
-          data:{keyword: this.value}
+          data:{keyword: this.value,pagesize:100}
       }).then(res => {
           let odata = res.data.info.map(item => {
             return {

@@ -38,6 +38,6 @@ export default new Router({
     // 歌曲列表
     {path: '/songs', name: 'Songs', component: Songs, meta: {title: '歌曲列表'}},
 
-    {path: '*',redirect: '/home'}
+    {path: '*', redirect: '/home'}
   ]
 })

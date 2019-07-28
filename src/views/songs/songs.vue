@@ -37,10 +37,15 @@ export default {
             "time":""
            }
            this.$store.commit('updateSongData', oData)
+       },
+       show() {
+           if(!this.songList.length) {
+               this.$router.push('/home')
+           }
        }
     },
     mounted() {
-      
+      this.show()
     },
     watch: {
         currentIndex(val) {

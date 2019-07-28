@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="item-box">
-      <div class="item margin-left-15 margin-top-5" :style="imgStyle" v-for="(item,index) in datalist.items" :key="index">
+      <div class="item margin-left-15 margin-top-5" :style="imgStyle" v-for="(item,index) in datalist.items" :key="index" @click="getSongList(item)">
         <div style="position:relative">
           <img :src="item.img"  alt="">
           <div class="play">
@@ -47,6 +47,35 @@ export default {
           height: '90px',
         }
       }
+    },
+    handleClick:{
+      type:Boolean,
+      default:false
+    }
+  },
+  methods:{
+    getSongList(item) {
+      if(!this.handleClick) {
+        return
+      }
+      let keyword = item.keyword;
+      this.$fetch({
+          url:'api/getSongList',
+          data:{keyword:keyword,pagesize:100}
+      }).then(res => {
+          let odata = res.data.info.map(item => {
+            return {
+              songname:item.songname,
+              singer:item.singername,
+              albumname:item.album_name
+            }
+          })
+          this.$store.commit('updateSongList',odata);
+          this.$store.commit('updateOrigin','酷狗音乐')
+          this.$router.push('/songs')
+      }).catch(err => {
+          console.log(err)
+      })
     }
   },
   mounted(){

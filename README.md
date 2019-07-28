@@ -1,4 +1,4 @@
-项目预览地址：https://miaomiao12345.github.io/myRoy/
+项目预览地址：https://miaomiao12345.github.io/myRoy/dist/index
 (暂时没有数据，建议下载源码运行看效果)
 
 运行项目：

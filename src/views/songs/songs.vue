@@ -20,53 +20,72 @@
 <script>
 import { debuglog } from 'util';
 import { setTimeout } from 'timers';
+import { Toast } from 'mint-ui'
+
 export default {
-    name: 'Songs',
-    data() {
-        return {
-            tempSongList:[],
-            currentIndex: 999
-        }
-    },
-    methods: {
-       changePlaying(item) {
-           let oData = {
-            "img":item.img || 'https://y.gtimg.cn/music/photo_new/T001R150x150M000000IBYF50SRnXP.jpg',
-            "name":item.songname,
-            "singer":item.singer,
-            "time":""
-           }
-           this.$store.commit('updateSongData', oData)
-       },
-       show() {
-           if(!this.songList.length) {
-               this.$router.push('/home')
-           }
-       }
-    },
-    mounted() {
-      this.show()
-    },
-    watch: {
-        currentIndex(val) {
-            if(this.currentIndex !== 999) {
-                setTimeout(() => {
-                    this.currentIndex = 999
-                },3000)
-            }
-        }
-    },
-    computed: {
-        songList() {
-            return this.$store.state.songlist
-        },
-        origin() {
-            return this.$store.state.origin
-        }
+  name: 'Songs',
+  data () {
+    return {
+      tempSongList: [],
+      currentIndex: 999,
+      playurl: ''
     }
+  },
+  methods: {
+    changePlaying (item) {
+      this.changeNav(item);
+      if (this.origin === 'qq音乐') {
+        let songmid = item.songmid
+        let songkey = `C400${songmid}.m4a`
+        this.$fetch({
+          url: 'api/getVkey',
+          data: {songmid:songmid, filename:songkey ,}
+        }).then(res => {
+          let key = res.data.items[0].vkey
+          this.playurl = `http://ws.stream.qqmusic.qq.com/C400003lghpv0jfFXG.m4a?fromtag=0&guid=126548448&vkey=${key}`
+        }).catch(err => {
+          Toast('开通会员享受更多权益～')
+        })
+      }
+
+    },
+    changeNav (item) {
+      let oData = {
+        "img": item.img || 'https://y.gtimg.cn/music/photo_new/T001R150x150M000000IBYF50SRnXP.jpg',
+        "name": item.songname,
+        "singer": item.singer,
+        "time": ""
+      }
+      this.$store.commit('updateSongData', oData)
+    },
+    show () {
+      if (!this.songList.length) {
+        this.$router.push('/home')
+      }
+    }
+  },
+  mounted () {
+    this.show()
+  },
+  watch: {
+    currentIndex (val) {
+      if (this.currentIndex !== 999) {
+        setTimeout(() => {
+          this.currentIndex = 999
+        }, 3000)
+      }
+    }
+  },
+  computed: {
+    songList () {
+      return this.$store.state.songlist
+    },
+    origin () {
+      return this.$store.state.origin
+    }
+  }
 }
 </script>
 
 <style lang="less" scoped>
-
 </style>

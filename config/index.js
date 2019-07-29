@@ -21,6 +21,16 @@ module.exports = {
           '^/api/getDiscList': '',
         }
       },
+      // '/api/getDiscList': {
+      //   target: 'https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?g_tk=5381&uin=0&format=jsonp&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&w=%E9%9D%92%E8%8A%B1%E7%93%B7&zhidaqu=1&catZhida=1&t=0&flag=1&ie=utf-8&sem=1&aggr=0&perpage=20&n=20&p=1&remoteplace=txt.mqq.all&_=1520833663464',
+      //   bypass: function (req, res, proxyOptions) {
+      //     req.headers.referer = 'https://c.y.qq.com';
+      //     req.headers.host = 'c.y.qq.com';
+      //   },
+      //   pathRewrite: {
+      //     '^/api/getDiscList': '',
+      //   }
+      // },
       '/api/getSongList': {
         target: 'http://mobilecdn.kugou.com/api/v3/search/song',
         bypass: function (req, res, proxyOptions) {
@@ -33,6 +43,16 @@ module.exports = {
       },
       '/api/getRankList': {
         target: 'https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8%C2%ACice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=27&_=1519963122923',
+        bypass: function (req, res, proxyOptions) {
+          req.headers.referer = 'https://c.y.qq.com';
+          req.headers.host = 'c.y.qq.com';
+        },
+        pathRewrite: {
+          '^/api/getRankList': ''
+        }
+      },
+      '/api/getVkey': {
+        target: 'https://c.y.qq.com/base/fcgi-bin/fcg_music_express_mobile3.fcg',
         bypass: function (req, res, proxyOptions) {
           req.headers.referer = 'https://c.y.qq.com';
           req.headers.host = 'c.y.qq.com';

@@ -147,7 +147,8 @@ export default {
             songname:item.data.songname,
             singer:item.data.singer[0].name,
             albumname:item.data.albumname,
-            img:`http://imgcache.qq.com/music/photo/album_300/${albumid}/300_albumpic_${item.data.albumid}_0.jpg`
+            img:`http://imgcache.qq.com/music/photo/album_300/${albumid}/300_albumpic_${item.data.albumid}_0.jpg`,
+            songmid: item.data.songmid
           }
         })
         this.$store.commit('updateSongList',odata);
@@ -167,9 +168,10 @@ export default {
           let albumid = album.toString().slice(len-2);
           albumid = albumid.indexOf('0') == 0 ? albumid.slice(1) : albumid;
           return {
-            songname:item.data.songname,
-            singer:item.data.singer[0].name,
-            albumname:item.data.albumname,
+            songname: item.data.songname,
+            singer: item.data.singer[0].name,
+            albumname: item.data.albumname,
+            songmid: item.data.songmid,
             img:`http://imgcache.qq.com/music/photo/album_300/${albumid}/300_albumpic_${item.data.albumid}_0.jpg`
           }
         })

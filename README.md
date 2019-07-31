@@ -1,4 +1,7 @@
-项目预览地址：https://miaomiao12345.github.io/myRoy/
+仿qq音乐播放器app（H5）
+===
+
+*项目预览地址：https://miaomiao12345.github.io/myRoy/
 (暂时没有数据，建议下载源码运行看效果)
 
 运行项目：

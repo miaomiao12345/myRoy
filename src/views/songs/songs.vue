@@ -46,6 +46,7 @@ export default {
         }).catch(err => {
           Toast('开通会员享受更多权益～')
         })
+        
       }
 
     },

@@ -4,12 +4,12 @@
 *项目预览地址：https://miaomiao12345.github.io/myRoy/
 (暂时没有数据，建议下载源码运行看效果)
 
-运行项目：
-cd myRoy
+    运行项目：
+    >>cd myRoy
 
-npm install
+    >>npm install
 
-npm run dev
+    >>npm run dev
 
 源码内含mockdata，可直接看页面效果
 
